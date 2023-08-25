@@ -1,8 +1,8 @@
 const axios = require('axios');
 
 
-const updatedProducts = [];
-const fetchInfo = async () => {
+export const updatedProducts = [];
+export const fetchInfo = async () => {
   try {
 
     if(updatedProducts.length==0){
@@ -25,8 +25,5 @@ const fetchInfo = async () => {
 };
 
 
-module.exports = {
-  fetchInfo,
-  updatedProducts
-}
+
 
